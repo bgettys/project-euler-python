@@ -1,0 +1,27 @@
+'''
+Created on Mar 6, 2014
+
+@author: rgettys
+'''
+
+'''
+n! means n × (n − 1) × ... × 3 × 2 × 1
+
+For example, 10! = 10 × 9 × ... × 3 × 2 × 1 = 3628800,
+and the sum of the digits in the number 10! is 3 + 6 + 2 + 8 + 8 + 0 + 0 = 27.
+
+Find the sum of the digits in the number 100!
+'''
+
+product = 1
+for i in range(1,101):
+    product *= i;
+digitSum = 0;
+strProduct = str(product)
+digits = len(strProduct)
+for i in range(0, digits): 
+    digitSum += int(strProduct[i])
+print(digitSum)
+
+if __name__ == '__main__':
+    pass
