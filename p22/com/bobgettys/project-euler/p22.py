@@ -35,13 +35,11 @@ i = 1
 sum = 0
 for name in sorted(names):
     for c in name:
-        print(c)
         o = ord(c)
         if (o > 90):
             o -= 96
         else:
             o -= 64
-        print(o)
         sum += o*i
     i += 1
 print(sum)
